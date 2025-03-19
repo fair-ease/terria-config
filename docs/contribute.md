@@ -12,9 +12,14 @@ $ make dc
 # run the local docker stack
 $ make dc-start
 
-
 # stop the local docker stack
 $ make dc-stop
+
+# git into the terriamap container with a shell
+$ make dc-exec  # use ctrl-d to get out
+
+# check any logs from the terriamap container
+$ make dc-logs  # use ctrl-c to get out
 ```
 
 ## what do you want to add?
@@ -57,3 +62,36 @@ We recommend to
 - integratring IDDAS as type of catalog to terriamap
 - see how we can fit into galaxy
 - see how w3id usage can help us get past possible terriamap uri encoding issues
+
+## about some uncommon hackery going on ...
+
+### the `./secrets-merge.sh`
+
+Some of the terriamap features can use available online services that require some API_TOKEN (or any other form of credentials).
+
+Those are typically tied to personal accounts and should never be committed to git nor shared via github.
+
+In stead we recommend adding them into the local `./.secrets` file (which is ignored from the git repo)
+To use its value you can simply add a `${VARNAME}` reference to the `./wwwroot/config.json` file.
+
+These will get replaced with the actucal values by the `./secrets-merge.sh` script that will effectively produce some temporary `/tmp/wwwroot-config-*.json` file. This in turn gets passed down to the docker container via the `TMCFG` environment variable that is picked up in the `docker-compose.yml`
+
+This only assumes you startup the container (as our `make dc-start` is doing) with this command:
+
+```bash
+$ TMCFG="$(./secrets-merge.sh)" docker compose up -d
+```
+
+### The TerriaMap submodule
+
+The folder TerriaMap in this repo is in fact a git-submodule to the [fair-ease fork of TerriaMap](https://github.com/fair-ease/TerriaMap)
+
+It got added through
+
+```bash
+$ git submodule add git@github.com:fair-ease/TerriaMap.git
+```
+
+Our `docker-compose.yml` is pointing to that folder to (if called) build the terriamap docker image based on the contents of that folder.
+
+The reasoning behind it, is to easily allow switching between working with our custom fork, or the upstream baseline.

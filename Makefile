@@ -41,11 +41,11 @@ dc-stop:  ## Stops local-named variants of those containers
 
 
 dc-exec:  ## Opens an interactive shell into the terria-map container
-	@echo "starting endless listing of loggs - press «ctrl-c» to stop"
+	@echo "start an interactive shell into the terriamaps container"
 	@docker compose exec terriafe /bin/bash
 
 
 dc-logs:  ## Opens the logs to the terria-map container
-	@echo "starting endless listing of loggs - press «ctrl-c» to stop"
+	@echo "starting endless listing of logs - press «ctrl-c» to stop"
 	@docker compose logs terriafe -f
 
