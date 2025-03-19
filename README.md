@@ -16,7 +16,7 @@ $ cd terria-config
 
 # copy and change .env and .secrets
 $ cp example.dot.env .env && vi .env
-$ cp example.dot.secrets && vi .secrets
+$ cp example.dot.secrets .secrets && vi .secrets
 
 # select / build the terriamap docker image by either option 1/2
 # option 1. build locally
