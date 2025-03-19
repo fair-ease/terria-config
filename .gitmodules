@@ -1,0 +1,3 @@
+[submodule "TerriaMap"]
+	path = TerriaMap
+	url = git@github.com:fair-ease/TerriaMap.git
