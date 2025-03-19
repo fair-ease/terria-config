@@ -1,0 +1,24 @@
+# env variables in use - override these with a local .env file if needed
+# TMI (terria-map-image to use) value one of
+#     - terriafe (local build of terriajs/terriamap)
+#     - ghcr.io/fair-ease/terriafe:latest (latest release from terriajs/terriamap) as published on github container registry
+# TMPORT (terria-map-port to expose the service on)
+#     - 3001 (default port)
+# TMCFG (terria-map-config to use)
+#     - ./wwwroot/config.json (default config)
+#     - /tmp/tm-config.XXXXXX.json (temporary config produced by secrets-merge.sh)
+
+services:
+  terriafe:
+    image: ${TMI:-terriafe}
+    build:
+      context: ./TerriaMap # link to fair-ease fork of terriajs/terriamap
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "${TMPORT:-3001}:3001"
+    volumes:
+      - ${TMCFG:-./wwwroot/config.json}:/app/wwwroot/config.json
+      - ./wwwroot/init:/app/wwwroot/init
+      - ./wwwroot/fairease.eu:/app/wwwroot/fairease.eu
+      - ./serverconfig.json:/app/serverconfig.json
