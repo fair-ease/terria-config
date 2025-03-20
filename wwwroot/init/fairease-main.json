@@ -305,7 +305,7 @@
           "type": "csv",
           "name": "Etna",
           "id": "etnaomics",
-          "url": "test/omics/Etna_latlon.csv",
+          "url": "fairease.eu/data/omics/Etna_latlon.csv",
           "styles":[{"id":"User Style","color":{"nullColor":"rgba(225,220,220,1)"},"hidden":false}],
           "activeStyle":"User Style",
           "columns": [
@@ -322,7 +322,7 @@
           "type": "csv",
           "name": "Honga Tonga Marmdb",
           "id": "TongaMarmadbomics",
-          "url": "test/omics/HungaTonga_latlon_marmdb.csv",
+          "url": "fairease.eu/data/omics/HungaTonga_latlon_marmdb.csv",
           "styles":[{"id":"User Style","color":{"nullColor":"rgba(229,220,220,1)"},"hidden":false}],
           "activeStyle":"User Style",
           "columns": [
@@ -339,7 +339,7 @@
           "type": "csv",
           "name": "Honga Tonga Our",
           "id": "TongaOuromics",
-          "url": "test/omics/HungaTonga_our.csv",
+          "url": "fairease.eu/data/omics/HungaTonga_our.csv",
           "styles":[{"id":"User Style","color":{"nullColor":"rgba(119,125,160,1)"},"hidden":false}],
           "activeStyle":"User Style",
           "columns": [
@@ -356,7 +356,7 @@
           "type": "csv",
           "name": "Honga Tonga Sra Run Table",
           "id": "TongaSRAomics",
-          "url": "test/omics/SraRunTable_HungaTonga.csv",
+          "url": "fairease.eu/data/omics/SraRunTable_HungaTonga.csv",
           "styles":[{"id":"User Style","color":{"nullColor":"rgba(112,220,159,1)"},"hidden":false}],
           "activeStyle":"User Style",
           "columns": [
