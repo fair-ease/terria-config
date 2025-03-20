@@ -59,6 +59,23 @@
               "name": "CHL_L3",
               "url": "https://examind.eoscfe.mesocentre.uca.fr/examind/WS/wms/CMEMS_WMS?service=WMS&version=1.3.0&request=GetCapabilities",
               "layers": "CHL_L3",
+              "description": "Mass concentration of chlorophyll a in a sea water",
+              "attribution": "© <a href='https://data.marine.copernicus.eu/product/OCEANCOLOUR_GLO_BGC_L3_MY_009_103/description'>Copernicus Marine</a>",
+              "info": [
+                {
+                  "name": "Full name",
+                  "content": "Global Ocean Colour (Copernicus-GlobColour), Bio-Geo-Chemical, L3 (daily) from Satellite Observations (1997-ongoing)"
+                },
+                {
+                  "name": "Product ID",
+                  "content": "OCEANCOLOUR_GLO_BGC_L3_MY_009_103"
+                },
+                {
+                  "name": "Source Format",
+                  "content": "NetCDF-4"
+                }
+              ],
+              "opacity": 0.9,
               "availableStyles": [
                 {
                   "layerName": "CHL_L3",
