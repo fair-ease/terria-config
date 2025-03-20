@@ -217,6 +217,18 @@
       "members": [
         {
           "type": "csv",
+          "name": "Argo Float profile around the Hunga Tunga",
+          "url": "data/CMEMS_BGC_station_overview.csv",
+          "featureInfoTemplate": {
+            "template": "<div class='abc'>'CMEMS BGC Temperature profile measured on the {{datetime}}.png'<figure><img src='https://erddap.ifremer.fr/erddap/tabledap/ArgoFloats-synthetic-BGC.png?temp,pres,psal&time={{datetime}}&platform_number=%22{{platform_code}}%22&.draw=markers&.marker=10%7C5&.color=0xFFFF00&.colorBar=KT_haline%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.yRange=%7C%7Cfalse%7C'/></figure></div>",
+            "showFeatureInfoDownloadWithTemplate": false
+          },
+          "defaultStyle":{"time":{"timeColumn":null}},
+          "activeStyle": "dataset_id",
+          "showDisableTimeOption": true
+        },
+        {
+          "type": "csv",
           "name": "USGS Earthquake data - Dec'2021 - Jan'2022 - (CSV)",
           "url": "fairease.eu/data/usgs_earthQuake_2021-12_2022-30.csv",
           "activeStyle": "mag",
@@ -236,16 +248,6 @@
       "name": "ERDDAP MI Waverider geojson example",
       "id": "waverider"
     },
- {
-          "type": "geojson",
-          "name": "STA geojson output",
-          "id": "123456",
-          "url": "https://sensors.bgs.ac.uk/FROST-Server/v1.1/FeaturesOfInterest?$resultFormat=GeoJSON",
-          "featureInfoTemplate": {
-            "template": "<table><tbody><tr><td>Type</td><td>Station</td></tr><tr><td>Value</td><td>{{id}}</td></tr><tr><td>Data for station {{id}}</td><td><chart sources='https://sensors.bgs.ac.uk/FROST-Server/v1.1/FeaturesOfInterest({{id}})/Observations?$select=phenomenonTime,result&$top=100&$resultFormat=CSV' column-names='Time,Signal' column-units='Date,Watts' y-column='result'></chart></td></tr></tbody></table><p>Sample data only</p>",
-            "showFeatureInfoDownloadWithTemplate": false
-          }
-        },  
     {
       "type": "csv",
       "name": "USGS Earthquake data - Dec'2021 - Jan'2022 - Styled(CSV)",
