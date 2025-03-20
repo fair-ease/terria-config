@@ -220,7 +220,19 @@
               "type": "wms",
               "name": "Sea_Surface_Height_Above_Geoid",
               "url": "https://examind.eoscfe.mesocentre.uca.fr/examind/WS/wms/CMEMS_WMS?service=WMS&version=1.3.0&request=GetCapabilities",
-              "layers": "Sea_Surface_Height_Above_Geoid"
+              "layers": "Sea_Surface_Height_Above_Geoid",
+              "availableStyles": [
+                {
+                  "layerName": "Sea_Surface_Height_Above_Geoid",
+                  "styles": [
+                    {
+                      "name": " sea_surface_height_above_geoid-sld",
+                      "title": " sea_surface_height_above_geoid-sld",
+                      "abstract": ""
+                    }
+                  ]
+                } 
+              ]
             },
             {
               "type": "wms",
