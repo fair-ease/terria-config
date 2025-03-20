@@ -236,12 +236,6 @@
       ]
     },
     {
-      "type": "geojson",
-      "url": "https://tinyurl.com/yn5v2dc2",
-      "name": "ERDDAP MI Waverider geojson example",
-      "id": "waverider"
-    },
-    {
       "name": "USGS Earthquake data",
       "type": "group",
       "members": [
@@ -299,13 +293,6 @@
               }
             }
           ]
-        },
-        {
-          "type": "csv",
-          "name": "USGS Earthquake data - Dec'2021 - Jan'2022 - (CSV)",
-          "url": "fairease.eu/data/usgs_earthQuake_2021-12_2022-30.csv",
-          "activeStyle": "mag",
-          "id": "usgshunga20212022"
         }
       ]
     },
@@ -318,18 +305,18 @@
         {
           "type": "3d-tiles",
           "ionAssetId": 96188,
-          "name": "Cesium OSM Buildings",
+          "name": "Cesium OSM Buildings - needs Cesium Token",
           "id": "some-unique-id"
         },
         {
           "type": "cesium-terrain",
           "ionAssetId": 2426648,
-          "name": "Cesium World Bathymetry"
+          "name": "Cesium World Bathymetry - needs Cesium Token"
         },
         {
           "type": "3d-tiles",
           "ionAssetId": 2275207,
-          "name": "Google Photorealistic 3D Tiles"
+          "name": "Google Photorealistic 3D Tiles - needs Cesium Token"
         },
         {
           "type": "geojson",
