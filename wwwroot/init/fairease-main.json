@@ -13,56 +13,49 @@
     "services-eu1.arcgis.com",
     "tinyurl.com"
   ],
-  "catalog": [
-    {
+  "catalog": [{
       "type": "group",
       "isOpen": true,
       "name": "Sentinel 5P",
-      "members": [
-        {
-          "type": "group",
-          "name": "Daily Sulphur Dioxide - Near Real Time",
-          "isOpen": true,
-          "members": [
-            {
-              "type": "wms",
-              "name": "Daily Sulphur Dioxide - Near Real Time 2022-01-14",
-              "url": "https://thredds.icare.univ-lille.fr/thredds/wms/S5P_SO2_NRTI_D3/2022/S5P_SO2_NRTI_D3_2022-01-14_3600x1800_V1-01.nc?service=WMS&version=1.3.0&request=GetCapabilities",
-              "layers": "sulfurdioxide_total_vertical_column",
-              "colorScaleMinimum": 0.0005,
-              "colorScaleMaximum": 0.01
-            },
-            {
-              "type": "wms",
-              "name": "Daily Sulphur Dioxide - Near Real Time 2022-01-15",
-              "url": "https://thredds.icare.univ-lille.fr/thredds/wms/S5P_SO2_NRTI_D3/2022/S5P_SO2_NRTI_D3_2022-01-15_3600x1800_V1-01.nc?service=WMS&version=1.3.0&request=GetCapabilities",
-              "layers": "sulfurdioxide_total_vertical_column",
-              "colorScaleMinimum": 0.0005,
-              "colorScaleMaximum": 0.01
-            }
-          ]
-        }
-      ]
+      "members": [{
+        "type": "group",
+        "name": "Daily Sulphur Dioxide - Near Real Time",
+        "isOpen": true,
+        "members": [{
+            "type": "wms",
+            "name": "Daily Sulphur Dioxide - Near Real Time 2022-01-14",
+            "url": "https://thredds.icare.univ-lille.fr/thredds/wms/S5P_SO2_NRTI_D3/2022/S5P_SO2_NRTI_D3_2022-01-14_3600x1800_V1-01.nc?service=WMS&version=1.3.0&request=GetCapabilities",
+            "layers": "sulfurdioxide_total_vertical_column",
+            "colorScaleMinimum": 0.0005,
+            "colorScaleMaximum": 0.01
+          },
+          {
+            "type": "wms",
+            "name": "Daily Sulphur Dioxide - Near Real Time 2022-01-15",
+            "url": "https://thredds.icare.univ-lille.fr/thredds/wms/S5P_SO2_NRTI_D3/2022/S5P_SO2_NRTI_D3_2022-01-15_3600x1800_V1-01.nc?service=WMS&version=1.3.0&request=GetCapabilities",
+            "layers": "sulfurdioxide_total_vertical_column",
+            "colorScaleMinimum": 0.0005,
+            "colorScaleMaximum": 0.01
+          }
+        ]
+      }]
     },
     {
       "type": "group",
       "isOpen": true,
       "name": "CMEMS Chlorophyl - Examind",
-      "members": [
-        {
+      "members": [{
           "type": "group",
           "name": "Chlorophyl",
           "isOpen": true,
-          "members": [
-            {
+          "members": [{
               "type": "wms",
               "name": "CHL_L3",
               "url": "https://examind.eoscfe.mesocentre.uca.fr/examind/WS/wms/CMEMS_WMS?service=WMS&version=1.3.0&request=GetCapabilities",
               "layers": "CHL_L3",
               "description": "Mass concentration of chlorophyll a in a sea water",
               "attribution": "© <a href='https://data.marine.copernicus.eu/product/OCEANCOLOUR_GLO_BGC_L3_MY_009_103/description'>Copernicus Marine</a>",
-              "info": [
-                {
+              "info": [{
                   "name": "Full name",
                   "content": "Global Ocean Colour (Copernicus-GlobColour), Bio-Geo-Chemical, L3 (daily) from Satellite Observations (1997-ongoing)"
                 },
@@ -76,69 +69,60 @@
                 }
               ],
               "opacity": 0.9,
-              "availableStyles": [
-                {
-                  "layerName": "CHL_L3",
-                  "styles": [
-                    {
-                      "name": "mass_concentration_of_chlorophyll_a_in_sea_water-sld",
-                      "title": "mass_concentration_of_chlorophyll_a_in_sea_water-sld",
-                      "abstract": ""
-                    },
-                    {
-                      "name": "mass_concentration_of_chlorophyll_a_in_sea_water-sld-bis",
-                      "title": "mass_concentration_of_chlorophyll_a_in_sea_water-sld-bis",
-                      "abstract": ""
-                    }
-                  ]
-                } 
-              ]
+              "availableStyles": [{
+                "layerName": "CHL_L3",
+                "styles": [{
+                    "name": "mass_concentration_of_chlorophyll_a_in_sea_water-sld",
+                    "title": "mass_concentration_of_chlorophyll_a_in_sea_water-sld",
+                    "abstract": ""
+                  },
+                  {
+                    "name": "mass_concentration_of_chlorophyll_a_in_sea_water-sld-bis",
+                    "title": "mass_concentration_of_chlorophyll_a_in_sea_water-sld-bis",
+                    "abstract": ""
+                  }
+                ]
+              }]
             },
             {
               "type": "wms",
               "name": "CHL_uncertainly_L3",
               "url": "https://examind.eoscfe.mesocentre.uca.fr/examind/WS/wms/CMEMS_WMS?service=WMS&version=1.3.0&request=GetCapabilities",
               "layers": "CHL_uncertainly_L3",
-              "availableStyles": [
-                {
-                  "layerName": "CHL_uncertainly_L3",
-                  "styles": [
-                    {
-                      "name": "CHL_uncertainty-sld",
-                      "title": "CHL_uncertainty-sld",
-                      "abstract": ""
-                    },
-                    {
-                      "name": "CHL_uncertainty-sld-bis",
-                      "title": "CHL_uncertainty-sld-bis",
-                      "abstract": ""
-                    }
-                  ]
-                } 
-              ]
+              "availableStyles": [{
+                "layerName": "CHL_uncertainly_L3",
+                "styles": [{
+                    "name": "CHL_uncertainty-sld",
+                    "title": "CHL_uncertainty-sld",
+                    "abstract": ""
+                  },
+                  {
+                    "name": "CHL_uncertainty-sld-bis",
+                    "title": "CHL_uncertainty-sld-bis",
+                    "abstract": ""
+                  }
+                ]
+              }]
             },
             {
               "type": "wms",
               "name": "CHL_L4_Daily",
               "url": "https://examind.eoscfe.mesocentre.uca.fr/examind/WS/wms/CMEMS_WMS?service=WMS&version=1.3.0&request=GetCapabilities",
               "layers": "mass_concentration_of_chlorophyll_a_in_sea_water_L4_Daily",
-              "availableStyles": [
-                {
-                  "layerName": "CHL_L4_Daily",
-                  "styles": [
-                    {
-                      "name": "CHL_uncertainty-sld",
-                      "title": "CHL_uncertainty-sld",
-                      "abstract": ""
-                    },
-                    {
-                      "name": "CHL_uncertainty-sld-bis",
-                      "title": "CHL_uncertainty-sld-bis",
-                      "abstract": ""
-                    }
-                  ]
-                }
-              ]
+              "availableStyles": [{
+                "layerName": "CHL_L4_Daily",
+                "styles": [{
+                    "name": "CHL_uncertainty-sld",
+                    "title": "CHL_uncertainty-sld",
+                    "abstract": ""
+                  },
+                  {
+                    "name": "CHL_uncertainty-sld-bis",
+                    "title": "CHL_uncertainty-sld-bis",
+                    "abstract": ""
+                  }
+                ]
+              }]
             },
             {
               "type": "wms",
@@ -164,8 +148,7 @@
           "type": "group",
           "name": "X_Expressed_As_Chlorophyl",
           "isOpen": false,
-          "members": [
-            {
+          "members": [{
               "type": "wms",
               "name": "mass_concentration_of_prochlorophytes_expressed_as_chlorophyll_in_sea_water_L4_Monthly",
               "url": "https://examind.eoscfe.mesocentre.uca.fr/examind/WS/wms/CMEMS_WMS?service=WMS&version=1.3.0&request=GetCapabilities",
@@ -227,63 +210,56 @@
       "type": "group",
       "isOpen": false,
       "name": "CMEMS Sea Surface - Examind",
-      "members": [
-        {
-          "type": "group",
-          "name": "Sea Surface",
-          "isOpen": false,
-          "members": [
-            {
-              "type": "wms",
-              "name": "Sea_Surface_Height_Above_Geoid",
-              "url": "https://examind.eoscfe.mesocentre.uca.fr/examind/WS/wms/CMEMS_WMS?service=WMS&version=1.3.0&request=GetCapabilities",
-              "layers": "Sea_Surface_Height_Above_Geoid",
-              "availableStyles": [
-                {
-                  "layerName": "Sea_Surface_Height_Above_Geoid",
-                  "styles": [
-                    {
-                      "name": " sea_surface_height_above_geoid-sld",
-                      "title": " sea_surface_height_above_geoid-sld",
-                      "abstract": ""
-                    }
-                  ]
-                } 
-              ]
-            },
-            {
-              "type": "wms",
-              "name": "Sea_Surface_Height_Above_Sea_Level",
-              "url": "https://examind.eoscfe.mesocentre.uca.fr/examind/WS/wms/CMEMS_WMS?service=WMS&version=1.3.0&request=GetCapabilities",
-              "layers": "Sea_SurfaceuHeight_Above_Sea_Level"
-            },
-            {
-              "type": "wms",
-              "name": "Sea_Surface_Height_Above_Sea_Level_Standard_Error",
-              "url": "https://examind.eoscfe.mesocentre.uca.fr/examind/WS/wms/CMEMS_WMS?service=WMS&version=1.3.0&request=GetCapabilities",
-              "layers": "Sea_Surface_Height_Above_Sea_Level_Standard_Error"
-            },
-            {
-              "type": "wms",
-              "name": "Surface_Geostrophic_Sea_Water_Velocity",
-              "url": "https://examind.eoscfe.mesocentre.uca.fr/examind/WS/wms/CMEMS_WMS?service=WMS&version=1.3.0&request=GetCapabilities",
-              "layers": "Surface_Geostrophic_Sea_Water_Velocity"
-            },
-            {
-              "type": "wms",
-              "name": "Surface_Geostrophic_Sea_Water_Velocity_Assuming_Sea_Level_For_Geoid",
-              "url": "https://examind.eoscfe.mesocentre.uca.fr/examind/WS/wms/CMEMS_WMS?service=WMS&version=1.3.0&request=GetCapabilities",
-              "layers": "Surface_Geostrophic_Sea_Water_Velocity_Assuming_Sea_Level_For_Geoid"
-            },
-            {
-              "type": "wms",
-              "name": "Surface_Geostrophic_Sea_Water_Velocity_Assuming_Sea_Level_For_Geoid_Standard_Error",
-              "url": "https://examind.eoscfe.mesocentre.uca.fr/examind/WS/wms/CMEMS_WMS?service=WMS&version=1.3.0&request=GetCapabilities",
-              "layers": "Surface_Geostrophic_Sea_Water_Velocity_Assuming_Sea_Level_For_Geoid_Standard_Error"
-            }
-          ]
-        }
-      ]
+      "members": [{
+        "type": "group",
+        "name": "Sea Surface",
+        "isOpen": false,
+        "members": [{
+            "type": "wms",
+            "name": "Sea_Surface_Height_Above_Geoid",
+            "url": "https://examind.eoscfe.mesocentre.uca.fr/examind/WS/wms/CMEMS_WMS?service=WMS&version=1.3.0&request=GetCapabilities",
+            "layers": "Sea_Surface_Height_Above_Geoid",
+            "availableStyles": [{
+              "layerName": "Sea_Surface_Height_Above_Geoid",
+              "styles": [{
+                "name": " sea_surface_height_above_geoid-sld",
+                "title": " sea_surface_height_above_geoid-sld",
+                "abstract": ""
+              }]
+            }]
+          },
+          {
+            "type": "wms",
+            "name": "Sea_Surface_Height_Above_Sea_Level",
+            "url": "https://examind.eoscfe.mesocentre.uca.fr/examind/WS/wms/CMEMS_WMS?service=WMS&version=1.3.0&request=GetCapabilities",
+            "layers": "Sea_SurfaceuHeight_Above_Sea_Level"
+          },
+          {
+            "type": "wms",
+            "name": "Sea_Surface_Height_Above_Sea_Level_Standard_Error",
+            "url": "https://examind.eoscfe.mesocentre.uca.fr/examind/WS/wms/CMEMS_WMS?service=WMS&version=1.3.0&request=GetCapabilities",
+            "layers": "Sea_Surface_Height_Above_Sea_Level_Standard_Error"
+          },
+          {
+            "type": "wms",
+            "name": "Surface_Geostrophic_Sea_Water_Velocity",
+            "url": "https://examind.eoscfe.mesocentre.uca.fr/examind/WS/wms/CMEMS_WMS?service=WMS&version=1.3.0&request=GetCapabilities",
+            "layers": "Surface_Geostrophic_Sea_Water_Velocity"
+          },
+          {
+            "type": "wms",
+            "name": "Surface_Geostrophic_Sea_Water_Velocity_Assuming_Sea_Level_For_Geoid",
+            "url": "https://examind.eoscfe.mesocentre.uca.fr/examind/WS/wms/CMEMS_WMS?service=WMS&version=1.3.0&request=GetCapabilities",
+            "layers": "Surface_Geostrophic_Sea_Water_Velocity_Assuming_Sea_Level_For_Geoid"
+          },
+          {
+            "type": "wms",
+            "name": "Surface_Geostrophic_Sea_Water_Velocity_Assuming_Sea_Level_For_Geoid_Standard_Error",
+            "url": "https://examind.eoscfe.mesocentre.uca.fr/examind/WS/wms/CMEMS_WMS?service=WMS&version=1.3.0&request=GetCapabilities",
+            "layers": "Surface_Geostrophic_Sea_Water_Velocity_Assuming_Sea_Level_For_Geoid_Standard_Error"
+          }
+        ]
+      }]
     },
     {
       "type": "wms-group",
@@ -302,8 +278,7 @@
     {
       "name": "Argo Float profiles",
       "type": "group",
-      "members": [
-        {
+      "members": [{
           "type": "csv",
           "name": "Argo Float BGC - Ifremer ERRDAP charts",
           "url": "fairease.eu/data/CMEMS_BGC_station_overview.csv",
@@ -311,7 +286,11 @@
             "template": "<div class='abc'>'CMEMS BGC Temperature profile measured on the {{datetime}}.png'<figure><img src='https://erddap.ifremer.fr/erddap/tabledap/ArgoFloats-synthetic-BGC.png?temp,pres,psal&time={{datetime}}&platform_number=%22{{platform_code}}%22&.draw=markers&.marker=10%7C5&.color=0xFFFF00&.colorBar=KT_haline%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.yRange=%7C%7Cfalse%7C'/></figure></div>",
             "showFeatureInfoDownloadWithTemplate": false
           },
-          "defaultStyle":{"time":{"timeColumn":null}},
+          "defaultStyle": {
+            "time": {
+              "timeColumn": null
+            }
+          },
           "activeStyle": "dataset_id",
           "showDisableTimeOption": true
         },
@@ -326,76 +305,73 @@
     {
       "name": "USGS Earthquake data",
       "type": "group",
-      "members": [
-        {
-          "type": "csv",
-          "name": "USGS Earthquake data - Dec'2021 - Jan'2022 - Styled(CSV)",
-          "url": "fairease.eu/data/usgs_earthQuake_2021-12_2022-30.csv",
-          "activeStyle": "mag",
-          "id": "usgshunga20212022styled",
-          "styles": [
-            {
-              "id": "mag",
-              "color": {
-                "colorPalette": "Reds"
-              },
-              "label": {
-                "enabled": false,
-                "mapType": "constant",
-                "column": "mag",
-                "null": {
-                  "labelColumn": "mag"
-                }
-              },
-              "hidden": false,
-              "chart": {
-                "xAxisColumn": "time",
-                "lines": [
-                  {
-                    "yAxisColumn": "mag"
-                  }
-                ]
+      "members": [{
+        "type": "csv",
+        "name": "USGS Earthquake data - Dec'2021 - Jan'2022 - Styled(CSV)",
+        "url": "fairease.eu/data/usgs_earthQuake_2021-12_2022-30.csv",
+        "activeStyle": "mag",
+        "id": "usgshunga20212022styled",
+        "styles": [{
+            "id": "mag",
+            "color": {
+              "colorPalette": "Reds"
+            },
+            "label": {
+              "enabled": false,
+              "mapType": "constant",
+              "column": "mag",
+              "null": {
+                "labelColumn": "mag"
               }
             },
-            {
-              "id": "depth",
-              "color": {
-                "colorPalette": "Blues"
-              },
-              "label": {
-                "enabled": false,
-                "mapType": "constant",
-                "column": "depth",
-                "null": {
-                  "labelColumn": "depth"
-                }
-              },
-              "hidden": false,
-              "chart": {
-                "xAxisColumn": "time",
-                "lines": [
-                  {
-                    "yAxisColumn": "depth"
-                  }
-                ]
-              }
+            "hidden": false,
+            "chart": {
+              "xAxisColumn": "time",
+              "lines": [{
+                "yAxisColumn": "mag"
+              }]
             }
-          ]
-        }
-      ]
-    },    {
+          },
+          {
+            "id": "depth",
+            "color": {
+              "colorPalette": "Blues"
+            },
+            "label": {
+              "enabled": false,
+              "mapType": "constant",
+              "column": "depth",
+              "null": {
+                "labelColumn": "depth"
+              }
+            },
+            "hidden": false,
+            "chart": {
+              "xAxisColumn": "time",
+              "lines": [{
+                "yAxisColumn": "depth"
+              }]
+            }
+          }
+        ]
+      }]
+    }, {
       "name": "Omics Data",
       "type": "group",
-      "members": [
-        {
+      "members": [{
           "type": "csv",
           "name": "Etna",
           "id": "etnaomics",
           "url": "fairease.eu/data/omics/Etna_latlon.csv",
-          "styles":[{"id":"User Style","color":{"nullColor":"rgba(225,220,220,1)"},"hidden":false}],
-          "activeStyle":"User Style",
-          "columns": [
-          {
+          "styles": [{
+            "id": "User Style",
+            "color": {
+              "nullColor": "rgba(225,220,220,1)"
+            },
+            "hidden": false
+          }],
+          "activeStyle": "User Style",
+          "columns": [{
             "name": "Run",
             "type": "hidden"
 
@@ -409,10 +385,15 @@
           "name": "Honga Tonga Marmdb",
           "id": "TongaMarmadbomics",
           "url": "fairease.eu/data/omics/HungaTonga_latlon_marmdb.csv",
-          "styles":[{"id":"User Style","color":{"nullColor":"rgba(229,220,220,1)"},"hidden":false}],
-          "activeStyle":"User Style",
-          "columns": [
-          {
+          "styles": [{
+            "id": "User Style",
+            "color": {
+              "nullColor": "rgba(229,220,220,1)"
+            },
+            "hidden": false
+          }],
+          "activeStyle": "User Style",
+          "columns": [{
             "name": "library_id",
             "type": "hidden"
 
@@ -426,10 +407,15 @@
           "name": "Honga Tonga Our",
           "id": "TongaOuromics",
           "url": "fairease.eu/data/omics/HungaTonga_our.csv",
-          "styles":[{"id":"User Style","color":{"nullColor":"rgba(119,125,160,1)"},"hidden":false}],
-          "activeStyle":"User Style",
-          "columns": [
-          {
+          "styles": [{
+            "id": "User Style",
+            "color": {
+              "nullColor": "rgba(119,125,160,1)"
+            },
+            "hidden": false
+          }],
+          "activeStyle": "User Style",
+          "columns": [{
             "name": "Run",
             "type": "hidden"
 
@@ -443,10 +429,15 @@
           "name": "Honga Tonga Sra Run Table",
           "id": "TongaSRAomics",
           "url": "fairease.eu/data/omics/SraRunTable_HungaTonga.csv",
-          "styles":[{"id":"User Style","color":{"nullColor":"rgba(112,220,159,1)"},"hidden":false}],
-          "activeStyle":"User Style",
-          "columns": [
-          {
+          "styles": [{
+            "id": "User Style",
+            "color": {
+              "nullColor": "rgba(112,220,159,1)"
+            },
+            "hidden": false
+          }],
+          "activeStyle": "User Style",
+          "columns": [{
             "name": "Run",
             "type": "hidden"
 
@@ -455,15 +446,95 @@
             "template": "<div class='ena'><small>Record: {{Run}}</small><p><a target='_enaurl' href='https://www.ebi.ac.uk/ena/browser/view/{{Run}}'>Open European Nucleotide Archive Record </a></div>"
           }
         }
-        ]
-      },
+      ]
+    },
+    {
+      "name": "W*S (sextant.ifremer.fr)",
+      "type": "group",
+      "members": [{
+          "name": "WMTS SEXTANT",
+          "id": "wmts_sextant",
+          "url": "https://sextant.ifremer.fr/geowebcache/service/wmts",
+          "isOpen": false,
+          "type": "wmts-group"
+        },
+        {
+          "name": "WMS SEXTANT",
+          "id": "wms_sextant",
+          "url": "https://sextant.ifremer.fr/services/wms/oceanographie_physique",
+          "isOpen": false,
+          "type": "wms-group"
+        },
+        {
+          "name": "(BROKEN) WPS SEXTANT",
+          "id": "wps_sextant",
+          "url": "https://sextant.ifremer.fr/services/wps",
+          "isOpen": false,
+          "type": "wps-group"
+        },
+        {
+          "name": "WFS SEXTANT",
+          "id": "wfs_sextant",
+          "url": "https://sextant.ifremer.fr/services/wfs/ocean_indien",
+          "isOpen": false,
+          "type": "wfs-group"
+        }
+      ]
+    },
+    {
+      "name": "ERDDAP - (erddap.ifremer.fr)",
+      "type": "group",
+      "members": [{
+          "type": "csv",
+          "name": "CSV - SUBSET - static Gridded : Med",
+          "url": "https://erddap.ifremer.fr/erddap/griddap/SDC_BAL_CLIM_TS_V1_m.csv?ITS_90_water_temperature%5B(2009-12-16T00:00:00Z):2:(2009-12-16T00:00:00Z)%5D%5B(0.0):2:(0)%5D%5B(53.0):4:(66.0)%5D%5B(9.0):4:(31.0)%5D,Water_body_salinity%5B(2009-12-16T00:00:00Z):2:(2009-12-16T00:00:00Z)%5D%5B(0.0):2:(0)%5D%5B(53.0):4:(66.0)%5D%5B(9.0):4:(31.0)%5D",
+          "activeStyle": "mag",
+          "id": "static_csv_erddap"
+        },
+        {
+          "type": "geojson",
+          "name": "GeoJSON - SUBSET - static Table : Black Sea",
+          "url": "https://erddap.ifremer.fr/erddap/tabledap/SDC_BLS_AGG_V2.geoJson?time%2Cstation_id%2Cplatform%2Cobs_date_qc%2Clatitude%2Clongitude%2Cposition_qc%2Cdepth%2Cdepth_qc%2Ctemp%2Ctemp_qc%2Cpsal%2Cpsal_qc&time%3E%3D2019-05-26T00%3A00%3A00Z&time%3C%3D2019-06-02T12%3A07%3A00Z&depth%3C%3D100",
+          "activeStyle": "mag",
+          "id": "static_geojson_erddap"
+        },
+        {
+          "type": "kml",
+          "name": "KML - SUBSET - static Table : Global Ocean",
+          "url": "https://erddap.ifremer.fr/erddap/tabledap/SDC_GLO_AGG_V2.kml?time%2Cstation_id%2Cplatform%2Cobs_date_qc%2Clatitude%2Clongitude%2Cposition_qc%2Cdepth%2Cdepth_qc%2Ctemp%2Ctemp_qc%2Cpsal%2Cpsal_qc%2Ctype&time%3E%3D2019-09-15T00%3A00%3A00Z&time%3C%3D2019-09-22T11%3A44%3A00Z",
+          "activeStyle": "mag",
+          "id": "static_kml_erddap"
+        }
+      ]
+    },
+    {
+      "name": "WMS - THREDDS (tds1.ifremer.fr)",
+      "type": "group",
+      "members": [{
+        "name": "WMS thredds",
+        "id": "wms_thredds",
+        "url": "https://tds1.ifremer.fr/thredds/wms/MARC-MANGAE2500-MARS3D_F1-FOR_FULL_TIME_SERIE",
+        "isOpen": false,
+        "type": "wms-group"
+      }]
+    },
+    {
+      "name": "WMS - ERDDAP (erddap.ifremer.fr)",
+      "type": "group",
+      "members": [{
+        "name": "WMS ERDDAP",
+        "id": "wms_erddap",
+        "url": "https://erddap.ifremer.fr/erddap/wms/SDC_MED_CLIM_TS_V1_m/request",
+        "isOpen": false,
+        "type": "wms-group"
+      }]
+    },
     {
       "type": "group",
       "isOpen": true,
       "name": "3D Visualisations",
       "description": "Cesium ION 3D assets",
-      "members": [
-        {
+      "members": [{
           "type": "3d-tiles",
           "ionAssetId": 96188,
           "name": "Cesium OSM Buildings - needs Cesium Token",
@@ -498,8 +569,7 @@
     ],
     "defaultBaseMapId": "basemap-openstreetmap",
     "previewBaseMapId": "basemap-natural-earth-II",
-    "items": [
-      {
+    "items": [{
         "item": {
           "id": "basemap-positron",
           "name": "Positron (Light)",
