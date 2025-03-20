@@ -82,79 +82,10 @@
       "members": [
         {
           "type": "csv",
-          "name": "CSV Test",
-          "id": "zrPtHVJcPi",
-          "url": "test/incidents_notime.csv"
-        },
-        {
-          "type": "csv",
           "name": "USGS Earthquake data - Dec'2021 - Jan'2022 - (CSV)",
           "url": "fairease.eu/data/usgs_earthQuake_2021-12_2022-30.csv",
           "activeStyle": "mag",
           "id": "usgshunga20212022"
-        },
-        {
-          "name": "ABC Photo Stories (2009-2014)",
-          "description": "Australia Broadcasting Company stories from 2009-2014 with accompanying photos.\n\nThis dataset demonstrates the ability to show users a custom feature info panel when they click on a feature on the map.",
-          "type": "csv",
-          "id": "cJiWroyAzU",
-          "url": "test/localphotostories20092014.csv",
-          "featureInfoTemplate": {
-            "template": "<div class='abc'><small>{{Date}}</small>{{#Primary image}}<figure><img src='{{Primary image}}'/><figcaption>{{Primary image caption}}</figcaption></figure>{{/Primary image}}<p><a target='_blank' href={{URL}}>Read More</a></div>"
-          }
-        },
-        {
-          "type": "csv",
-          "name": "Pacific Earthquakes (CSV)",
-          "url": "test/earthquakes.csv",
-          "activeStyle": "Magnitude",
-          "id": "u3nGNh"
-        }
-      ]
-    },
-    {
-      "type": "api-table",
-      "name": "City of Melbourne Pedestrian Counter",
-      "description": "The City of Melbourne Pedestrian Counting System data has been obtained from the City of Melbourne Open data platform: www.data.melbourne.vic.gov.au to demonstrate the directional movement of pedestrians across the city.\n\nThe counters generate a per minute reading on each of the pedestrian traffic sensors which are then displayed as near-live data.\n\nTo find out more about the City of Melbourne's Pedestrian Counting System or to seek access to their data, please click:\n\nhttp://www.pedestrian.melbourne.vic.gov.au/?_ga=2.244642053.1432520662.1632694466-1456630549.1631675392#date=27-09-2021&time=1",
-      "defaultStyle": {
-        "time": {
-          "spreadFinishTime": true,
-          "timeColumn": "sensing_datetime"
-        }
-      },
-      "initialTimeSource": "stop",
-      "columns": [
-        {
-          "name": "total_of_directions"
-        },
-        {
-          "name": "direction_2"
-        },
-        {
-          "name": "direction_1"
-        },
-        {
-          "name": "sensing_datetime"
-        },
-        {
-          "name": "latitude"
-        },
-        {
-          "name": "longitude"
-        }
-      ],
-      "idKey": "location_id",
-      "refreshInterval": 60,
-      "removeDuplicateRows": true,
-      "apis": [
-        {
-          "url": "https://melbournetestbed.opendatasoft.com/api/explore/v2.1/catalog/datasets/pedestrian-counting-system-past-hour-counts-per-minute/records?select=location_id%2Csensing_datetime%2Cdirection_1%2Cdirection_2%2Ctotal_of_directions&order_by=sensing_datetime%20DESC&limit=100",
-          "responseDataPath": "results",
-          "kind": "PER_ROW"
-        },
-        {
-          "url": "https://melbournetestbed.opendatasoft.com/api/explore/v2.1/catalog/datasets/pedestrian-counting-system-sensor-locations/exports/json?lang=en&timezone=Australia%2FSydney",
-          "kind": "PER_ID"
         }
       ]
     },
@@ -170,26 +101,6 @@
       "name": "ERDDAP MI Waverider geojson example",
       "id": "waverider"
     },
-    {
-      "type": "csv",
-      "name": "CMEMS_BGC_data_csv_chart",
-      "url": "fairease.eu/data/CMEMS_BGC.csv",
-      "defaultStyle": {
-        "id": "test_style",
-        "time": {
-          "timeColumn": "datetime",
-          "idColumns": ["platform_code", "LONGITUDE", "LATITUDE"]
-        },
-        "chart": {
-          "xAxisColumn": "PSAL",
-          "lines": [
-            {
-              "yAxisColumn": "PRES"
-            }
-          ]
-        }
-      }
-    },
  {
           "type": "geojson",
           "name": "STA geojson output",
@@ -199,14 +110,7 @@
             "template": "<table><tbody><tr><td>Type</td><td>Station</td></tr><tr><td>Value</td><td>{{id}}</td></tr><tr><td>Data for station {{id}}</td><td><chart sources='https://sensors.bgs.ac.uk/FROST-Server/v1.1/FeaturesOfInterest({{id}})/Observations?$select=phenomenonTime,result&$top=100&$resultFormat=CSV' column-names='Time,Signal' column-units='Date,Watts' y-column='result'></chart></td></tr></tbody></table><p>Sample data only</p>",
             "showFeatureInfoDownloadWithTemplate": false
           }
-        },
-    {
-      "type": "csv",
-      "name": "USGS Earthquake data - Dec'2021 - Jan'2022 - (CSV)",
-      "url": "test/usgs_earthQuake_2021-12_2022-30.csv",
-      "activeStyle": "mag",
-      "id": "usgshunga20212022"
-    },
+        },  
     {
       "type": "csv",
       "name": "USGS Earthquake data - Dec'2021 - Jan'2022 - Styled(CSV)",
