@@ -35,7 +35,7 @@ Look at the current file for examples and inspiration.
 
 ### enable other catalog entries
 
-In stead of keepint to add more entries to the `fairease-main.json` one can also introduce extra files next to in the same `wwwroot/init` folder and reference them in the `wwwroot/config.json`
+In stead of keeping to add more entries to the `fairease-main.json` one can also introduce extra files next to in the same `wwwroot/init` folder and reference them in the `wwwroot/config.json`
 
 This is is done at the top of that file:
 
@@ -51,6 +51,8 @@ We recommend to
 - create your own branch (ask access to the repo in fairease, or use your own fork)
 - commit and push to that
 - propose a PR to be merged for the rest of fair-ease to enjoy
+
+Tip: most of the contributions below do not require a rebuild of the docker image, not even a restart of the docker restart as most config changes are picked up. This means you don't have to execute the (lengthy) `make dc` again, and even can avoid cycling through the restart by `make dc-stop dc-start`
 
 ## ongoing challenges and work (mostly during FE hackathon in Brest March 2025)
 

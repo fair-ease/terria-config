@@ -18,7 +18,7 @@ services:
     ports:
       - "${TMPORT:-3001}:3001"
     volumes:
-      - ${TMCFG:-./wwwroot/config.json}:/app/wwwroot/config.json
-      - ./wwwroot/init:/app/wwwroot/init
-      - ./wwwroot/fairease.eu:/app/wwwroot/fairease.eu
-      - ./serverconfig.json:/app/serverconfig.json
+      - ${TMCFG:-./wwwroot/config.json}:/app/wwwroot/config.json:Z
+      - ./wwwroot/init:/app/wwwroot/init:Z
+      - ./wwwroot/fairease.eu:/app/wwwroot/fairease.eu:Z
+      - ./serverconfig.json:/app/serverconfig.json:Z
