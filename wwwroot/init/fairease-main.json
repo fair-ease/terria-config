@@ -58,13 +58,47 @@
               "type": "wms",
               "name": "CHL_L3",
               "url": "https://examind.eoscfe.mesocentre.uca.fr/examind/WS/wms/CMEMS_WMS?service=WMS&version=1.3.0&request=GetCapabilities",
-              "layers": "CHL_L3"
+              "layers": "CHL_L3",
+              "availableStyles": [
+                {
+                  "layerName": "CHL_L3",
+                  "styles": [
+                    {
+                      "name": "mass_concentration_of_chlorophyll_a_in_sea_water-sld",
+                      "title": "mass_concentration_of_chlorophyll_a_in_sea_water-sld",
+                      "abstract": ""
+                    },
+                    {
+                      "name": "mass_concentration_of_chlorophyll_a_in_sea_water-sld-bis",
+                      "title": "mass_concentration_of_chlorophyll_a_in_sea_water-sld-bis",
+                      "abstract": ""
+                    }
+                  ]
+                } 
+              ]
             },
             {
               "type": "wms",
               "name": "CHL_uncertainly_L3",
               "url": "https://examind.eoscfe.mesocentre.uca.fr/examind/WS/wms/CMEMS_WMS?service=WMS&version=1.3.0&request=GetCapabilities",
-              "layers": "CHL_uncertainly_L3"
+              "layers": "CHL_uncertainly_L3",
+              "availableStyles": [
+                {
+                  "layerName": "CHL_uncertainly_L3",
+                  "styles": [
+                    {
+                      "name": "CHL_uncertainty-sld",
+                      "title": "CHL_uncertainty-sld",
+                      "abstract": ""
+                    },
+                    {
+                      "name": "CHL_uncertainty-sld-bis",
+                      "title": "CHL_uncertainty-sld-bis",
+                      "abstract": ""
+                    }
+                  ]
+                } 
+              ]
             },
             {
               "type": "wms",
@@ -209,7 +243,15 @@
       "type": "wms-group",
       "name": "CMEMS WMS (All) - Examind",
       "url": "https://examind.eoscfe.mesocentre.uca.fr/examind/WS/wms/CMEMS_WMS",
-      "id": "cmemswmsexamind"
+      "id": "cmemswmsexamind",
+      "isOpen": false
+    },
+    {
+      "type": "wms-group",
+      "name": "WMS - Other Examples - Examind",
+      "url": "https://examind.eoscfe.mesocentre.uca.fr/examind/WS/wms/WMS-Test",
+      "id": "testwmsexamind",
+      "isOpen": false
     },
     {
       "name": "Argo Float profiles",
