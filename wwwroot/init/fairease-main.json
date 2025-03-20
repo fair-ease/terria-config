@@ -212,13 +212,13 @@
       "id": "cmemswmsexamind"
     },
     {
-      "name": "CSV",
+      "name": "Argo Float profiles",
       "type": "group",
       "members": [
         {
           "type": "csv",
-          "name": "Argo Float profile around the Hunga Tunga",
-          "url": "data/CMEMS_BGC_station_overview.csv",
+          "name": "Argo Float BGC - Ifremer ERRDAP charts",
+          "url": "fairease.eu/data/CMEMS_BGC_station_overview.csv",
           "featureInfoTemplate": {
             "template": "<div class='abc'>'CMEMS BGC Temperature profile measured on the {{datetime}}.png'<figure><img src='https://erddap.ifremer.fr/erddap/tabledap/ArgoFloats-synthetic-BGC.png?temp,pres,psal&time={{datetime}}&platform_number=%22{{platform_code}}%22&.draw=markers&.marker=10%7C5&.color=0xFFFF00&.colorBar=KT_haline%7C%7C%7C%7C%7C&.bgColor=0xffccccff&.yRange=%7C%7Cfalse%7C'/></figure></div>",
             "showFeatureInfoDownloadWithTemplate": false
@@ -228,19 +228,12 @@
           "showDisableTimeOption": true
         },
         {
-          "type": "csv",
-          "name": "USGS Earthquake data - Dec'2021 - Jan'2022 - (CSV)",
-          "url": "fairease.eu/data/usgs_earthQuake_2021-12_2022-30.csv",
-          "activeStyle": "mag",
-          "id": "usgshunga20212022"
+          "type": "geojson",
+          "url": "https://tinyurl.com/2keu2az3",
+          "name": "Argo BGC -ifremer ERDDAP geojson - TinyURL",
+          "id": "ifremerargobgctinyul"
         }
       ]
-    },
-    {
-      "type": "geojson",
-      "url": "https://tinyurl.com/2keu2az3",
-      "name": "Argo BGC -ifremer ERDDAP geojson - TinyURL",
-      "id": "ifremerargobgctinyul"
     },
     {
       "type": "geojson",
@@ -249,57 +242,70 @@
       "id": "waverider"
     },
     {
-      "type": "csv",
-      "name": "USGS Earthquake data - Dec'2021 - Jan'2022 - Styled(CSV)",
-      "url": "test/usgs_earthQuake_2021-12_2022-30.csv",
-      "activeStyle": "mag",
-      "id": "usgshunga20212022styled",
-      "styles": [
+      "name": "USGS Earthquake data",
+      "type": "group",
+      "members": [
         {
-          "id": "mag",
-          "color": {
-            "colorPalette": "Reds"
-          },
-          "label": {
-            "enabled": false,
-            "mapType": "constant",
-            "column": "mag",
-            "null": {
-              "labelColumn": "mag"
-            }
-          },
-          "hidden": false,
-          "chart": {
-            "xAxisColumn": "time",
-            "lines": [
-              {
-                "yAxisColumn": "mag"
+          "type": "csv",
+          "name": "USGS Earthquake data - Dec'2021 - Jan'2022 - Styled(CSV)",
+          "url": "fairease.eu/data/usgs_earthQuake_2021-12_2022-30.csv",
+          "activeStyle": "mag",
+          "id": "usgshunga20212022styled",
+          "styles": [
+            {
+              "id": "mag",
+              "color": {
+                "colorPalette": "Reds"
+              },
+              "label": {
+                "enabled": false,
+                "mapType": "constant",
+                "column": "mag",
+                "null": {
+                  "labelColumn": "mag"
+                }
+              },
+              "hidden": false,
+              "chart": {
+                "xAxisColumn": "time",
+                "lines": [
+                  {
+                    "yAxisColumn": "mag"
+                  }
+                ]
               }
-            ]
-          }
+            },
+            {
+              "id": "depth",
+              "color": {
+                "colorPalette": "Blues"
+              },
+              "label": {
+                "enabled": false,
+                "mapType": "constant",
+                "column": "depth",
+                "null": {
+                  "labelColumn": "depth"
+                }
+              },
+              "hidden": false,
+              "chart": {
+                "xAxisColumn": "time",
+                "lines": [
+                  {
+                    "yAxisColumn": "depth"
+                  }
+                ]
+              }
+            }
+          ]
         },
         {
-          "id": "depth",
-          "color": {
-            "colorPalette": "Blues"
-          },
-          "label": {
-            "enabled": false,
-            "mapType": "constant",
-            "column": "depth",
-            "null": {
-              "labelColumn": "depth"
-            }
-          },
-          "hidden": false,
-          "chart": {
-            "xAxisColumn": "time",
-            "lines": [
-              {
-                "yAxisColumn": "depth"
-              }
-            ]
-          }
+          "type": "csv",
+          "name": "USGS Earthquake data - Dec'2021 - Jan'2022 - (CSV)",
+          "url": "fairease.eu/data/usgs_earthQuake_2021-12_2022-30.csv",
+          "activeStyle": "mag",
+          "id": "usgshunga20212022"
         }
       ]
     },
