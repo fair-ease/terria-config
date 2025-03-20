@@ -24,7 +24,7 @@ set +a # auto export no longer needed beyond this point
 
 # make a tempfile
 TEMP_FILE=$(mktemp /tmp/wwwroot-config-XXXXXX.json)
-
+chmod ugo+rw ${TEMP_FILE}
 # read config, use envsubst to replace, redirect output to tempfile
 cat $CONFIG_FILE | envsubst > $TEMP_FILE
 # return created tempfile as output

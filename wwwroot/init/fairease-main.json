@@ -190,6 +190,16 @@
         }
       }
     },
+ {
+          "type": "geojson",
+          "name": "STA geojson output",
+          "id": "123456",
+          "url": "https://sensors.bgs.ac.uk/FROST-Server/v1.1/FeaturesOfInterest?$resultFormat=GeoJSON",
+          "featureInfoTemplate": {
+            "template": "<table><tbody><tr><td>Type</td><td>Station</td></tr><tr><td>Value</td><td>{{id}}</td></tr><tr><td>Data for station {{id}}</td><td><chart sources='https://sensors.bgs.ac.uk/FROST-Server/v1.1/FeaturesOfInterest({{id}})/Observations?$select=phenomenonTime,result&$top=100&$resultFormat=CSV' column-names='Time,Signal' column-units='Date,Watts' y-column='result'></chart></td></tr></tbody></table><p>Sample data only</p>",
+            "showFeatureInfoDownloadWithTemplate": false
+          }
+        },
     {
       "type": "csv",
       "name": "USGS Earthquake data - Dec'2021 - Jan'2022 - (CSV)",
