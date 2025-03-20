@@ -295,9 +295,7 @@
           ]
         }
       ]
-    },
-    ,
-    {
+    },    {
       "name": "Omics Data",
       "type": "group",
       "members": [
