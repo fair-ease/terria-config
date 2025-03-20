@@ -7,9 +7,12 @@ It does so by providinga local config and local data files (and fair-ease brandi
 
 ## usage
 
+Note: we recommend using git+ssh -- see [documentation on how to use ssh when connecting to github](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
+
 ```bash
 # git-checkout
 $ git clone git@github.com:fair-ease/terria-config.git  # note we recommend using proport git-ssh key setup - alternatively use the https://... uri
+$ git submodule update --init --recursive  # checks out the submodule - needed in case you want to use the local build image
 
 # enter the project
 $ cd terria-config
