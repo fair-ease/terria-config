@@ -5,9 +5,29 @@
 This repository provides a docker-compose.yml to build and run a terriamap instance for showcasing fair-ease results.
 It does so by providinga local config and local data files (and fair-ease branding changes)
 
-## usage
+## dependencies and setup
 
-Note: we recommend using git+ssh -- see [documentation on how to use ssh when connecting to github](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
+### git+ssh
+
+We recommend using git+ssh -- see [documentation on how to use ssh when connecting to github](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
+
+### make
+
+To automate the build we use make. Check if you have it through
+
+```bash
+$ make --version
+```
+
+### docker compose
+
+This also uses docker and docker compose. You will want to make sure the latter has version 2 or higher.
+
+```bash
+$ docker compose version
+```
+
+## usage
 
 ```bash
 # git-checkout
