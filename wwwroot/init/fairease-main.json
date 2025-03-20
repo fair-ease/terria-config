@@ -296,6 +296,81 @@
         }
       ]
     },
+    ,
+    {
+      "name": "Omics Data",
+      "type": "group",
+      "members": [
+        {
+          "type": "csv",
+          "name": "Etna",
+          "id": "etnaomics",
+          "url": "test/omics/Etna_latlon.csv",
+          "styles":[{"id":"User Style","color":{"nullColor":"rgba(225,220,220,1)"},"hidden":false}],
+          "activeStyle":"User Style",
+          "columns": [
+          {
+            "name": "Run",
+            "type": "hidden"
+
+          }],
+          "featureInfoTemplate": {
+            "template": "<div class='ena'><small>Record: {{Run}}</small><p><a target='_enaurl' href='https://www.ebi.ac.uk/ena/browser/view/{{Run}}'>Open European Nucleotide Archive Record </a></div>"
+          }
+        },
+        {
+          "type": "csv",
+          "name": "Honga Tonga Marmdb",
+          "id": "TongaMarmadbomics",
+          "url": "test/omics/HungaTonga_latlon_marmdb.csv",
+          "styles":[{"id":"User Style","color":{"nullColor":"rgba(229,220,220,1)"},"hidden":false}],
+          "activeStyle":"User Style",
+          "columns": [
+          {
+            "name": "library_id",
+            "type": "hidden"
+
+          }],
+          "featureInfoTemplate": {
+            "template": "<div class='ena'><small>Record: {{library_id}}</small><p><a target='_enaurl' href='https://www.ebi.ac.uk/ena/browser/view/{{library_id}}'>Open European Nucleotide Archive Record </a></div>"
+          }
+        },
+        {
+          "type": "csv",
+          "name": "Honga Tonga Our",
+          "id": "TongaOuromics",
+          "url": "test/omics/HungaTonga_our.csv",
+          "styles":[{"id":"User Style","color":{"nullColor":"rgba(119,125,160,1)"},"hidden":false}],
+          "activeStyle":"User Style",
+          "columns": [
+          {
+            "name": "Run",
+            "type": "hidden"
+
+          }],
+          "featureInfoTemplate": {
+            "template": "<div class='ena'><small>Record: {{Run}}</small><p><a target='_enaurl' href='https://www.ebi.ac.uk/ena/browser/view/{{Run}}'>Open European Nucleotide Archive Record </a></div>"
+          }
+        },
+        {
+          "type": "csv",
+          "name": "Honga Tonga Sra Run Table",
+          "id": "TongaSRAomics",
+          "url": "test/omics/SraRunTable_HungaTonga.csv",
+          "styles":[{"id":"User Style","color":{"nullColor":"rgba(112,220,159,1)"},"hidden":false}],
+          "activeStyle":"User Style",
+          "columns": [
+          {
+            "name": "Run",
+            "type": "hidden"
+
+          }],
+          "featureInfoTemplate": {
+            "template": "<div class='ena'><small>Record: {{Run}}</small><p><a target='_enaurl' href='https://www.ebi.ac.uk/ena/browser/view/{{Run}}'>Open European Nucleotide Archive Record </a></div>"
+          }
+        }
+        ]
+      },
     {
       "type": "group",
       "isOpen": true,
