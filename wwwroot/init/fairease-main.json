@@ -39,6 +39,14 @@
               "layers": "sulfurdioxide_total_vertical_column",
               "colorScaleMinimum": 0.0005,
               "colorScaleMaximum": 0.01
+            },
+            {
+              "type": "wms",
+              "name": "Daily Sulphur Dioxide - Near Real Time - NCML time Aggregate",
+              "url": "https://thredds.eoscfe.mesocentre.uca.fr/thredds/wms/S5P_SO2_NRTI_D3_2022/AGGREGATE?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "sulfurdioxide_total_vertical_column",
+              "colorScaleMinimum": 0.0005,
+              "colorScaleMaximum": 0.1
             }
           ]
         }
