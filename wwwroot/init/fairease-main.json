@@ -308,6 +308,41 @@
       "isOpen": false
     },
     {
+      "type": "group",
+      "isOpen": false,
+      "name": "Ifremer WMS",
+      "members": [
+        {
+          "name": "WMS ERDDAP",
+          "id": "wms_erddap",
+          "url": "https://erddap.ifremer.fr/erddap/wms/SDC_MED_CLIM_TS_V1_m/request",
+          "isOpen": false,
+          "type": "wms-group"
+         },
+         {
+          "name": "WMS thredds",
+          "id": "wms_thredds",
+          "url": "https://tds1.ifremer.fr/thredds/wms/MARC-MANGAE2500-MARS3D_F1-FOR_FULL_TIME_SERIE",
+          "isOpen": false,
+          "type": "wms-group"
+         }
+      ]      
+    },
+    {
+      "type": "group",
+      "isOpen": false,
+      "name": "Ifremer WMTS",
+      "members": [
+        {
+          "type": "wmts",
+          "name": "WMTS SEXTANT Brest 1929",
+          "id": "wmts_sextant",
+          "url": "https://sextant.ifremer.fr/geowebcache/service/wmts",
+          "layer":"Brest 1929"
+         }         
+      ]
+    },
+    {
       "name": "Argo Float profiles",
       "type": "group",
       "members": [
