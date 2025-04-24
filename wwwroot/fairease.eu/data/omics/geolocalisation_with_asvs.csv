@@ -1,0 +1,34 @@
+RUN_ID,geo_loc_name_country,geo_loc_name_country_continent,geo_loc_name,latitude,longitude,chao1_Index,taxonomy,all_asvs_json,all_phyla,top_taxa,phylum_diversity,family_diversity,phylum_profile,asv_count,dominant_phylum
+SRR22870102,Tonga,Oceania,Tonga: HTHH,20.54103,175.38288,26,,"[{""asv_id"": ""b34d8b72e3df1cce66eeaffae5bbb560"", ""count"": 60, ""taxonomy"": ""Bacteria; Pseudomonadota; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas""}, {""asv_id"": ""d32e579b3ae7b2aae8d5bf9f027c29af"", ""count"": 14, ""taxonomy"": ""Bacteria; Pseudomonadota; Gammaproteobacteria; Burkholderiales; Comamonadaceae; Delftia""}]",Pseudomonadota,Pseudomonas (81.1%) | Delftia (18.9%),1,2,Pseudomonadota (100.0%),2,Pseudomonadota
+SRR22870103,Tonga,Oceania,Tonga: HTHH,20.54008,175.38558,16,,"[{""asv_id"": ""d32e579b3ae7b2aae8d5bf9f027c29af"", ""count"": 9, ""taxonomy"": ""Bacteria; Pseudomonadota; Gammaproteobacteria; Burkholderiales; Comamonadaceae; Delftia""}]",Pseudomonadota,Delftia (100.0%),1,1,Pseudomonadota (100.0%),1,Pseudomonadota
+SRR22870104,Tonga,Oceania,Tonga: HTHH,20.54127,175.39191,7,,[],No data,No data,0,0,No data,0,Unknown
+SRR22870105,Tonga,Oceania,Tonga: HTHH,20.54735,175.396,11,,[],No data,No data,0,0,No data,0,Unknown
+SRR22870107,Tonga,Oceania,Tonga: HTHH,20.54355,175.38445,7,,[],No data,No data,0,0,No data,0,Unknown
+SRR22870118,Tonga,Oceania,Tonga: HTHH,20.5433,175.38473,5,,"[{""asv_id"": ""d32e579b3ae7b2aae8d5bf9f027c29af"", ""count"": 469, ""taxonomy"": ""Bacteria; Pseudomonadota; Gammaproteobacteria; Burkholderiales; Comamonadaceae; Delftia""}]",Pseudomonadota,Delftia (100.0%),1,1,Pseudomonadota (100.0%),1,Pseudomonadota
+SRR22870127,Tonga,Oceania,Tonga: HTHH,20.5376,175.38232,10,,[],No data,No data,0,0,No data,0,Unknown
+SRR22870128,Tonga,Oceania,Tonga: HTHH,20.54235,175.38913,16,,"[{""asv_id"": ""d32e579b3ae7b2aae8d5bf9f027c29af"", ""count"": 4, ""taxonomy"": ""Bacteria; Pseudomonadota; Gammaproteobacteria; Burkholderiales; Comamonadaceae; Delftia""}]",Pseudomonadota,Delftia (100.0%),1,1,Pseudomonadota (100.0%),1,Pseudomonadota
+SRR22870129,Tonga,Oceania,Tonga: HTHH,20.54285,175.38513,18,,[],No data,No data,0,0,No data,0,Unknown
+SRR22870130,Tonga,Oceania,Tonga: HTHH,20.54352,175.39859,12,,[],No data,No data,0,0,No data,0,Unknown
+SRR22870131,Tonga,Oceania,Tonga: HTHH,20.54401,175.39559,8,,[],No data,No data,0,0,No data,0,Unknown
+SRR22870132,Tonga,Oceania,Tonga: HTHH,20.54372,175.38923,14,,[],No data,No data,0,0,No data,0,Unknown
+SRR22870132,Tonga,Oceania,Tonga: HTHH,20.54372,175.38923,18,,[],No data,No data,0,0,No data,0,Unknown
+SRR22870133,Tonga,Oceania,Tonga: HTHH,20.54448,175.39374,17,,[],No data,No data,0,0,No data,0,Unknown
+SRR22870134,Tonga,Oceania,Tonga: HTHH,20.5351,175.38568,22,,[],No data,No data,0,0,No data,0,Unknown
+SRR22870135,Tonga,Oceania,Tonga: HTHH,20.53999,175.39154,6,,[],No data,No data,0,0,No data,0,Unknown
+SRR22870136,Tonga,Oceania,Tonga: HTHH,20.54066,175.3947,15,,[],No data,No data,0,0,No data,0,Unknown
+SRR22870137,Tonga,Oceania,Tonga: HTHH,20.54167,175.39534,8,,[],No data,No data,0,0,No data,0,Unknown
+SRR22870138,Tonga,Oceania,Tonga: HTHH,20.54222,175.40329,28,,[],No data,No data,0,0,No data,0,Unknown
+SRR22870139,Tonga,Oceania,Tonga: HTHH,20.54091,175.40285,11,,[],No data,No data,0,0,No data,0,Unknown
+SRR22870140,Tonga,Oceania,Tonga: HTHH,20.53878,175.38758,25,,[],No data,No data,0,0,No data,0,Unknown
+SRR22870141,Tonga,Oceania,Tonga: HTHH,20.53784,175.38173,9,,"[{""asv_id"": ""d32e579b3ae7b2aae8d5bf9f027c29af"", ""count"": 1851, ""taxonomy"": ""Bacteria; Pseudomonadota; Gammaproteobacteria; Burkholderiales; Comamonadaceae; Delftia""}]",Pseudomonadota,Delftia (100.0%),1,1,Pseudomonadota (100.0%),1,Pseudomonadota
+SRR22870142,Tonga,Oceania,Tonga: HTHH,20.53907,175.3839,16,,[],No data,No data,0,0,No data,0,Unknown
+SRR22870143,Tonga,Oceania,Tonga: HTHH,20.541,175.38345,15,,[],No data,No data,0,0,No data,0,Unknown
+SRR22870144,Tonga,Oceania,Tonga: HTHH,20.54908,175.3921,10,,"[{""asv_id"": ""d32e579b3ae7b2aae8d5bf9f027c29af"", ""count"": 252, ""taxonomy"": ""Bacteria; Pseudomonadota; Gammaproteobacteria; Burkholderiales; Comamonadaceae; Delftia""}]",Pseudomonadota,Delftia (100.0%),1,1,Pseudomonadota (100.0%),1,Pseudomonadota
+SRR22870145,Tonga,Oceania,Tonga: HTHH,20.54835,175.38967,10,,[],No data,No data,0,0,No data,0,Unknown
+SRR22870146,Tonga,Oceania,Tonga: HTHH,20.54671,175.3911,9,,[],No data,No data,0,0,No data,0,Unknown
+SRR22870147,Tonga,Oceania,Tonga: HTHH,20.54679,175.39116,9,,[],No data,No data,0,0,No data,0,Unknown
+SRR22870148,Tonga,Oceania,Tonga: HTHH,20.54656,175.39128,9,,"[{""asv_id"": ""d32e579b3ae7b2aae8d5bf9f027c29af"", ""count"": 141, ""taxonomy"": ""Bacteria; Pseudomonadota; Gammaproteobacteria; Burkholderiales; Comamonadaceae; Delftia""}]",Pseudomonadota,Delftia (100.0%),1,1,Pseudomonadota (100.0%),1,Pseudomonadota
+SRR22870149,Tonga,Oceania,Tonga: HTHH,20.53722,175.3845,9,,[],No data,No data,0,0,No data,0,Unknown
+SRR22870150,Tonga,Oceania,Tonga: HTHH,20.54288,175.38685,9,,[],No data,No data,0,0,No data,0,Unknown
+SRR22870151,Tonga,Oceania,Tonga: HTHH,20.53833,175.3878,9,,[],No data,No data,0,0,No data,0,Unknown
+SRR22870152,Tonga,Oceania,Tonga: HTHH,20.5384,175.38775,9,,[],No data,No data,0,0,No data,0,Unknown

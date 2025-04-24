@@ -462,7 +462,39 @@
           "featureInfoTemplate": {
             "template": "<div class='ena'><small>Record: {{Run}}</small><p><a target='_enaurl' href='https://www.ebi.ac.uk/ena/browser/view/{{Run}}'>Open European Nucleotide Archive Record </a></div>"
           }
-        }
+        },
+        {
+          "name": "ASV diversity data",
+          "description": "Honga tonga data from 2018-2019  ",
+          "type": "csv",
+          "id": "xx98JHt",
+          "url": "fairease.eu/data/omics/geolocalisation_with_asvs.csv",
+          "featureInfoTemplate": {
+            "template": "<div class='microbiome-data'><h3>Sample: {{RUN_ID}}</h3><div class='data-section'><h4>Location Information</h4><p><strong>Location:</strong> {{geo_loc_name}}</p><p><strong>Country:</strong> {{geo_loc_name_country}} ({{geo_loc_name_country_continent}})</p></div><div class='data-section'><h4>Diversity Metrics</h4><p><strong>Chao1 Index:</strong> {{chao1_Index}}</p><p><strong>ASV Count:</strong> {{asv_count}}</p><p><strong>Phylum Diversity:</strong> {{phylum_diversity}} phyla</p><p><strong>Family Diversity:</strong> {{family_diversity}} families</p></div><div class='data-section'><h4>Taxonomic Profile</h4><p><strong>Dominant Phylum:</strong> {{dominant_phylum}}</p><p><strong>All Phyla:</strong> {{all_phyla}}</p><p><strong>Phylum Profile:</strong> {{phylum_profile}}</p></div>{{#RUN_ID}}<div class='data-section'><h4>External Links</h4><p><strong>ENA Browser:</strong> <a target='_blank' href='https://www.ebi.ac.uk/ena/browser/view/{{RUN_ID}}'>View Run {{RUN_ID}} in ENA</a></p></div>{{/RUN_ID}}</div>",
+            "formats": {
+              "csv": {
+                "formats": {
+                  "chao1_Index": {
+                    "type": "number",
+                    "maximumFractionDigits": 0
+                  },
+                  "asv_count": {
+                    "type": "number",
+                    "maximumFractionDigits": 0
+                  },
+                  "phylum_diversity": {
+                    "type": "number",
+                    "maximumFractionDigits": 0
+                  },
+                  "family_diversity": {
+                    "type": "number",
+                    "maximumFractionDigits": 0
+		              }
+                }
+               }
+               }
+              }
+         }
         ]
       },
     {
