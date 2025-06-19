@@ -367,6 +367,13 @@
       ]
     },
     {
+      "type": "geojson",
+      "name": "RV Belgica 2023 SensorThings locations",
+      "id": "rvbelg123456",
+      "url": "https://sensors.naturalsciences.be/sta/v1.1/Locations?$filter=properties/cruise_identifier%20eq%20%272023/11%27&$top=4200&$resultFormat=GeoJSON",
+      "styles":[{"id":"@iot.id","color":{"colorPalette":"Reds","legendTicks":4},"pointSize":{"nullSize":1,"sizeFactor":5,"sizeOffset":1},"time":{"idColumns":["@iot.id"]},"hidden":false}]
+    },
+    {
       "name": "USGS Earthquake data",
       "type": "group",
       "members": [
